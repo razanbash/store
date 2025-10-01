@@ -1,15 +1,28 @@
 import '../style/nav.css';
 import {  Link } from 'react-router-dom'
+import React from 'react';
 
 export default function Nav(){
-
+  const [theme, setTheme] =React.useState('light')
+  const handleTheme = () => {
+      if (theme =='light'){
+         setTheme('dark')
+      }
+      else{
+            setTheme('light')
+      }
+  }
     return(
-        <div>
+        <div className={theme}>
             <ul>
                 <li><Link to="/">Home</Link></li>
-                 <li><Link to="/Products">Products</Link></li>
-                  <li><Link to="/">About</Link></li>
-                   <li><Link to="/">Contact</Link></li>
+                <li><Link to="/News">News</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+
+                <li>
+                    <button onClick={handleTheme}>change theme</button>
+                </li>
             </ul>
         </div>
     )

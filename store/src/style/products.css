@@ -1,4 +1,6 @@
-.light{
+
+
+ .light{
     background-color: white;
 }
 
@@ -6,3 +8,63 @@
     background-color: black;
     color: white;
 }
+
+
+div{
+    background-color: rgb(226, 215, 215);
+}
+.news {
+     border: 1px solid gray;
+     padding: 10px;
+     margin: 10px;
+     border-radius: 5px;
+     background-color: #f9f9f9;
+     text-align: center;
+  
+    }
+
+
+    .image  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+    .image div {
+        text-align: center;
+        width: 350px;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+       
+    }
+
+    .links {
+        text-decoration: none;
+        color: rgb(175, 142, 142);
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+       font-weight: bold;
+       ;
+    }
+
+    .links:hover {
+        text-decoration: underline;
+        color: rgb(177, 74, 74);
+    }
+   
+    h1 {
+        background-color: rgb(177, 74, 74);
+        padding: 20px;
+        margin: 0;
+
+    }
+
+    .image ul {
+        display: flex;
+        gap: 40px;
+    }
