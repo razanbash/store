@@ -1,6 +1,7 @@
 import React  from "react";
 import '../style/products.css';
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "./provider";
 // import SubProducts from "./subProduct";
 
 
@@ -8,6 +9,7 @@ export default function News(){
 
     // const [showImage,setShowImage] = React.useState('no')
     const [theme,setTheme] = React.useState('light')
+    const { changeShow, show } = useGlobalContext();
 
   
     // const handleClike = () => {
@@ -52,6 +54,18 @@ export default function News(){
         name:'Donald Trump',
         MoreImages:[
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8FSAB-Xsnkdkb4WEVfgPUXBXnGVxEDE1jsw&s",
+
+
+
+
+
+
+
+
+
+
+
+            
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8FSAB-Xsnkdkb4WEVfgPUXBXnGVxEDE1jsw&s",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tWj1zzhp8xvUdGU5E_bJVJ6MwadrKTs3YQ&s",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtkvjwuzlJY99qFcmbBopBO1Pkr1TIdBsrZQ&s",

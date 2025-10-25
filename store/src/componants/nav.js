@@ -2,6 +2,7 @@ import '../style/nav.css';
 import {  Link } from 'react-router-dom'
 import React from 'react';
 
+
 export default function Nav(){
   const [theme, setTheme] =React.useState('light')
   const handleTheme = () => {
@@ -19,6 +20,8 @@ export default function Nav(){
                 <li><Link to="/News">News</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/card">card</Link></li>
+                <li><Link to="/test">test</Link></li>
 
                 <li>
                     <button onClick={handleTheme}>change theme</button>

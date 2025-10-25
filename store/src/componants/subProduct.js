@@ -42,6 +42,7 @@ const decrment =()=>{
             <img id="photo" src={subProductFromMain.MoreImages[counter]} alt={subProductFromMain.name}/>
             <button className="btn" onClick={increment}> After</button>
             <p>descrption: {subProductFromMain.discrption}</p>
+           
             
         </div>
     )
